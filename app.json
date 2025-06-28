@@ -1,0 +1,24 @@
+{
+  "name": "PLAYBOY-MD",
+  "description": "Advanced WhatsApp Bot by Trendex",
+  "repository": "https://github.com/trendex/playboy-md",
+  "logo": "https://i.imgur.com/placeholder.png",
+  "keywords": ["whatsapp", "bot", "baileys", "playboy-md"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  }
+}
